@@ -1,5 +1,7 @@
 # strict-tslint-config
 
+[![Build Status](https://travis-ci.org/clebert/strict-tslint-config.svg?branch=master)](https://travis-ci.org/clebert/strict-tslint-config)
+
 > An opinionated TSLint configuration preset. Works best together with strict
 > TypeScript settings and Prettier.
 

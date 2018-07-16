@@ -29,6 +29,8 @@ const tsLintVersion = require('tslint/package.json').version;
 const readme = `
 # ${packageName}
 
+[![Build Status](https://travis-ci.org/clebert/${packageName}.svg?branch=master)](https://travis-ci.org/clebert/${packageName})
+
 > An opinionated TSLint configuration preset. Works best together with strict
 > TypeScript settings and Prettier.
 
