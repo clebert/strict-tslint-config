@@ -6,3 +6,8 @@ script:
   - yarn commitlint-travis
   - make clean
   - make test
+after_success:
+  - yarn travis-deploy-once 'yarn semantic-release'
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
