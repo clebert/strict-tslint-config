@@ -1,5 +1,5 @@
 {
-  "extends": ["./dist/index.js"],
+  "extends": "./dist/index.js",
   "linterOptions": {
     "exclude": ["**/dist/**", "**/node_modules/**"]
   }

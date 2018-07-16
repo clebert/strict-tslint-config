@@ -16,7 +16,7 @@ clean:
 README.md: dist/
 	node dist/create-readme.js
 
-dist/: src/*.ts node_modules/ tsconfig.json
+dist/: src/**/*.ts node_modules/ tsconfig.json
 	@yarn tsc --project .
 	@touch $@
 

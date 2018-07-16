@@ -4,7 +4,7 @@ import {IRuleMetadata, findRule} from 'tslint';
 export function findRuleMetadata(ruleName: string): IRuleMetadata {
   const rule = findRule(
     ruleName,
-    join(dirname(require.resolve('tslint')), 'lib/rules')
+    join(dirname(require.resolve('tslint')), 'rules')
   );
 
   if (!rule) {
