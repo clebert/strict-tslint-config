@@ -1,5 +1,6 @@
 # strict-tslint-config
 
+[![Package Version](https://img.shields.io/npm/v/strict-tslint-config.svg)](https://yarnpkg.com/en/package/strict-tslint-config)
 [![Build Status](https://travis-ci.org/clebert/strict-tslint-config.svg?branch=master)](https://travis-ci.org/clebert/strict-tslint-config)
 
 > An opinionated TSLint configuration preset. Works best together with strict

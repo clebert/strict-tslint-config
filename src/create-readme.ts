@@ -29,6 +29,7 @@ const tsLintVersion = require('tslint/package.json').version;
 const readme = `
 # ${packageName}
 
+[![Package Version](https://img.shields.io/npm/v/${packageName}.svg)](https://yarnpkg.com/en/package/${packageName})
 [![Build Status](https://travis-ci.org/clebert/${packageName}.svg?branch=master)](https://travis-ci.org/clebert/${packageName})
 
 > An opinionated TSLint configuration preset. Works best together with strict
