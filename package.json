@@ -1,0 +1,44 @@
+{
+  "name": "strict-tslint-config",
+  "version": "1.0.0",
+  "description": "An opinionated TSLint configuration preset. Works best together with strict TypeScript settings and Prettier.",
+  "license": "MIT",
+  "author": "Clemens Akens <clebert@me.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clebert/strict-tslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clebert/strict-tslint-config/issues"
+  },
+  "files": [
+    "dist/"
+  ],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "commitmsg": "commitlint --edit",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "common-tags": "^1.8.0",
+    "json-diff": "^0.5.2"
+  },
+  "peerDependencies": {
+    "tslint": "^5.10.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-angular": "^7.0.1",
+    "@commitlint/travis-cli": "^7.0.0",
+    "@types/common-tags": "^1.4.0",
+    "@types/node": "^10.5.2",
+    "@types/prettier": "^1.13.2",
+    "custom-tslint-formatters": "^2.4.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.7",
+    "tslint": "^5.11.0",
+    "typescript": "~2.9.2"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "problems.decorations.enabled": false,
+  "search.exclude": {
+    "**/dist/**": true,
+    "**/node_modules/**": true,
+    "**/npm-debug.log": true,
+    "**/yarn-error.log": true,
+    "**/yarn.lock": true
+  },
+  "tslint.enable": true,
+  "tslint.ignoreDefinitionFiles": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.formatOnSave": true
+}
