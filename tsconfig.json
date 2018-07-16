@@ -1,10 +1,23 @@
 {
   "include": ["src/**/*.ts", "typings/**/*.ts"],
   "compilerOptions": {
+    // Basic Options
     "target": "ES2017",
     "module": "commonjs",
-    "strict": true,
     "declaration": true,
-    "outDir": "dist/"
+    "sourceMap": true,
+    "outDir": "dist/",
+
+    // Strict Type-Checking Options
+    "strict": true,
+
+    // Additional Checks
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Module Resolution Options
+    "moduleResolution": "node"
   }
 }

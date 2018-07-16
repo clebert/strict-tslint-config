@@ -77,7 +77,29 @@ on the built-in configuration preset \`tslint:all\`:
 > \`"file-header"\`, which have no sensible defaults, and deprecated rules.)
 
 It is assumed that [TypeScript](https://www.typescriptlang.org/) is configured
-with strict settings, e.g. \`"strict": true\` and \`"noImplicitReturns": true\`.
+with strict settings, e.g.:
+
+\`\`\`json
+{
+  "compilerOptions": {
+    // Basic Options
+    // ...
+
+    // Strict Type-Checking Options
+    "strict": true,
+
+    // Additional Checks
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
+
+    // Module Resolution Options
+    // ...
+  }
+}
+\`\`\`
+
 Also, it is assumed that [Prettier](https://prettier.io/) is used for formatting
 your sources.
 
