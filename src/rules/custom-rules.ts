@@ -1,10 +1,10 @@
+import {gte} from 'semver';
 import {Rules} from './all-rules';
 
 export const customRules: Rules = {
   'array-type': [true, 'array'],
   'comment-format': [true, 'check-space'],
   'completed-docs': false,
-  'file-name-casing': [true, 'kebab-case'],
   'interface-name': [true, 'never-prefix'],
   'max-classes-per-file': false,
   'max-file-line-count': false,
@@ -59,3 +59,10 @@ export const customRules: Rules = {
     'allow-leading-underscore'
   ]
 };
+
+// tslint:disable-next-line:no-require-imports no-var-requires
+const tsLintVersion = require('tslint/package.json').version;
+
+if (gte(tsLintVersion, '5.11.0')) {
+  customRules['file-name-casing'] = [true, 'kebab-case'];
+}

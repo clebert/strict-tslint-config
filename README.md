@@ -18,7 +18,7 @@ Then create a TSLint configuration file (`tslint.json`) like this:
 
 ```json
 {
-  "extends": ["strict-tslint-config"],
+  "extends": "strict-tslint-config",
   "linterOptions": {
     "exclude": ["**/node_modules/**"]
   }
@@ -38,9 +38,9 @@ yarn tslint --config tslint.json '**/*.js'
 
 ## Configuration preset
 
-This [TSLint](https://palantir.github.io/tslint/) configuration preset is based
-on the built-in configuration preset
-[`tslint:all` in version `5.11.0`](https://github.com/palantir/tslint/blob/5.11.0/src/configs/all.ts):
+This dynamically generated configuration preset is compatible to
+[TSLint](https://palantir.github.io/tslint/) in version `^5.10.0`. It is based
+on the built-in configuration preset `tslint:all`:
 
 > **`tslint:all`** turns on all rules to their strictest settings. This will use
 > type checking, so it must be combined with the `--project option`. (Exceptions
@@ -52,7 +52,9 @@ with strict settings, e.g. `"strict": true` and `"noImplicitReturns": true`.
 Also, it is assumed that [Prettier](https://prettier.io/) is used for formatting
 your sources.
 
-The deviations from the configuration preset `tslint:all` are documented below:
+The deviations from the configuration preset
+[`tslint:all@5.11.0`](https://github.com/palantir/tslint/blob/5.11.0/src/configs/all.ts)
+are documented below:
 
 - [TypeScript and JavaScript rule overrides](#typescript-and-javascript-rule-overrides)
 - [TypeScript-only rule overrides](#typescript-only-rule-overrides)
