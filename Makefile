@@ -1,17 +1,7 @@
-.PHONY: test
 test: README.md
 	@yarn prettier --list-different '**/*.{js,json,md,ts}'
-
-	@yarn tslint \
-		--config tslint.json \
-		--project . \
-		--formatters-dir node_modules/custom-tslint-formatters/formatters/ \
-		--format grouped \
-		'**/*.ts'
-
-.PHONY: clean
-clean:
-	rm -rf dist/
+	@yarn tslint --config tslint.json --project . --format verbose '**/*.ts'
+	@touch $@
 
 README.md: dist/
 	node dist/create-readme.js
@@ -26,3 +16,7 @@ node_modules/: package.json yarn.lock
 
 yarn.lock:
 	@yarn
+
+.PHONY: clean
+clean:
+	rm -rf dist/
