@@ -82,20 +82,16 @@ with strict settings, e.g.:
 \`\`\`json
 {
   "compilerOptions": {
-    // Basic Options
-    // ...
-
-    // Strict Type-Checking Options
+    "target": "ES2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "sourceMap": true,
     "strict": true,
-
-    // Additional Checks
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true
-
-    // Module Resolution Options
-    // ...
   }
 }
 \`\`\`
