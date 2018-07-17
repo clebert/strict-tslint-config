@@ -62,7 +62,7 @@ configured accordingly):
 yarn tslint --config tslint.json --project . '**/*.{ts,tsx}'
 
 # Lint your JS sources
-yarn tslint --config tslint.json '**/*.js'
+yarn tslint --config tslint.json '**/*.{js,jsx}'
 \`\`\`
 
 ## Configuration preset
