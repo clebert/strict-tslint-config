@@ -67,6 +67,19 @@ with strict settings, e.g.:
 }
 ```
 
+**Note:** You can use the `tsconfig.json` file of this package as a basis for
+your project:
+
+```json
+{
+  "extends": "./node_modules/strict-tslint-config/tsconfig.json",
+  "include": ["src/**/*.ts", "src/**/*.tsx", "typings/**/*.d.ts"],
+  "compilerOptions": {
+    "outDir": "dist/"
+  }
+}
+```
+
 Also, it is assumed that [Prettier](https://prettier.io/) is used for formatting
 your sources.
 

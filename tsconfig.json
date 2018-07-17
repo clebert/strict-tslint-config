@@ -1,5 +1,5 @@
 {
-  "include": ["src/**/*.ts", "typings/**/*.ts"],
+  "include": ["src/**/*.ts", "typings/**/*.d.ts"],
   "compilerOptions": {
     "target": "ES2017",
     "module": "commonjs",
