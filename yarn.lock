@@ -1297,13 +1297,6 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-custom-tslint-formatters@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/custom-tslint-formatters/-/custom-tslint-formatters-2.4.0.tgz#4e2c17497e04affb48757006907e0d0d10dbdd88"
-  dependencies:
-    chalk "^2.3.0"
-    log-symbols "^2.2.0"
-
 dargs@^4.0.1:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/dargs/-/dargs-4.1.0.tgz#03a9dbb4b5c2f139bf14ae53f0b8a2a6a86f4e17"
