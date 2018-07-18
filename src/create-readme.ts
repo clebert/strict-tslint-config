@@ -97,7 +97,7 @@ with strict settings, e.g.:
 \`\`\`
 
 **Note:** You can use the \`tsconfig.json\` file of this package as a basis for
-your project:
+your project, e.g.:
 
 \`\`\`json
 {
