@@ -35,6 +35,9 @@ const readme = `
 > An opinionated TSLint configuration preset. Works best together with strict
 > TypeScript settings and Prettier.
 
+**Note:** Please use [\`ts-config\`](https://github.com/clebert/ts-config/)
+instead of this package.
+
 ## Getting started
 
 First, install \`${packageName}\` as a dev dependency:
@@ -47,7 +50,7 @@ Then create a TSLint configuration file (\`tslint.json\`) like this:
 
 \`\`\`json
 {
-  "extends": "strict-tslint-config",
+  "extends": "${packageName}",
   "linterOptions": {
     "exclude": ["**/node_modules/**"]
   }
