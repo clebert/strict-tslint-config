@@ -6,6 +6,9 @@
 > An opinionated TSLint configuration preset. Works best together with strict
 > TypeScript settings and Prettier.
 
+**Note:** Please use [`ts-config`](https://github.com/clebert/ts-config/)
+instead of this package.
+
 ## Getting started
 
 First, install `strict-tslint-config` as a dev dependency:
